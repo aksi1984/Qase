@@ -17,6 +17,12 @@ on:
 permissions:
   contents: write
 
+env:
+  QASE_ENABLE: ${{QASE.QASE_ENABLE}}
+  QASE_API_TOKEN: ${{QASE.QASE_API_TOKEN}}
+  QASE_RUN_NAME: ${{QASE.QASE_RUN_NAME}}
+  QASE_RUN_DESCRIPTION: ${{QASE.QASE_RUN_DESCRIPTION}}
+
 jobs:
   build:
 
