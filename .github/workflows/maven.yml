@@ -18,10 +18,10 @@ permissions:
   contents: write
 
 env:
-  QASE_ENABLE: ${{qase.QASE_ENABLE}}
-  QASE_API_TOKEN: ${{qase.QASE_API_TOKEN}}
-  QASE_RUN_NAME: ${{qase.QASE_RUN_NAME}}
-  QASE_RUN_DESCRIPTION: ${{qase.QASE_RUN_DESCRIPTION}}
+  QASE_ENABLE: ${{secrets.QASE_ENABLE}}
+  QASE_API_TOKEN: ${{secrets.QASE_API_TOKEN}}
+  QASE_RUN_NAME: ${{secrets.QASE_RUN_NAME}}
+  QASE_RUN_DESCRIPTION: ${{secrets.QASE_RUN_DESCRIPTION}}
 
 jobs:
   build:
