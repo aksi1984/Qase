@@ -15,9 +15,6 @@ on:
     branches: [ "master" ]
   workflow_dispatch:
     inputs:
-      qase_api_base_url:
-        description: 'Qase API URL'
-        required: true
       qase_report:
         description: 'Enabled/disabled reporting to Qase'
         required: true
@@ -29,11 +26,11 @@ permissions:
   contents: write
 
 env:
-  QASE_ENABLE: ${{secrets.QASE_ENABLE}}
-  QASE_API_TOKEN: ${{secrets.QASE_API_TOKEN}}
-  QASE_RUN_NAME: ${{secrets.QASE_RUN_NAME}}
-  QASE_RUN_DESCRIPTION: ${{secrets.QASE_RUN_DESCRIPTION}}
-  QASE_PROJECT_CODE: ${{secrets.QASE_PROJECT_CODE}}
+  QASE_ENABLE: true
+  QASE_API_TOKEN: ${{env.QASE_API_TOKEN}}
+  QASE_RUN_NAME: My run
+  QASE_RUN_DESCRIPTION: Desc
+  QASE_PROJECT_CODE: ${{env.QASE_PROJECT_CODE}}
   QASE_RUN_COMPLETE: true
   QASE_REPORT: true
 
