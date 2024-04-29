@@ -33,7 +33,9 @@ env:
   QASE_API_TOKEN: ${{secrets.QASE_API_TOKEN}}
   QASE_RUN_NAME: ${{secrets.QASE_RUN_NAME}}
   QASE_RUN_DESCRIPTION: ${{secrets.QASE_RUN_DESCRIPTION}}
-  QASE_PROJECT_CODEQ: ${{secrets.QASE_PROJECT_CODE}}
+  QASE_PROJECT_CODE: ${{secrets.QASE_PROJECT_CODE}}
+  QASE_RUN_COMPLETE: true
+  QASE_REPORT: true
 
 jobs:
   build:
