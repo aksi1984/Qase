@@ -31,7 +31,7 @@ on:
         description: 'Qase Run autocomplete'
         required: true
 env:
-  QASE_API_BASE_URL: https://api.qase.io/v1/p
+  QASE_API_BASE_URL: https://api.qase.io/v1/
   QASE_REPORT: true
   QASE_PROJECT_CODE: IWT
   QASE_RUN_ID: 1
