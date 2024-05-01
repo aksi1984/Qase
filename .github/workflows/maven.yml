@@ -15,9 +15,6 @@ on:
     branches: [ "master" ]
   workflow_dispatch:
     inputs:
-      qase_report:
-        description: 'Enabled/disabled reporting to Qase'
-        required: true
       qase_project_code:
         description: 'Qase project code'
         required: true
