@@ -24,17 +24,13 @@ on:
       qase_project_code:
         description: 'Qase project code'
         required: true
-      qase_run_id:
-        description: 'Qase Run ID'
-        required: true
       qase_run_complete:
         description: 'Qase Run autocomplete'
         required: true
 env:
-  QASE_API_BASE_URL: https://api.qase.io/v1/run
+  QASE_API_BASE_URL: https://api.qase.io/v1/
   QASE_REPORT: true
   QASE_PROJECT_CODE: IWT
-  QASE_RUN_ID: 1
   QASE_RUN_COMPLETE: true
   QASE_API_TOKEN: 420deea903d9fadb8b194f500553bd170e117f5b13b2a987280c975b514cac99
 
