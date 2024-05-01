@@ -18,13 +18,9 @@ on:
       qase_project_code:
         description: 'Qase project code'
         required: true
-      qase_run_complete:
-        description: 'Qase Run autocomplete'
-        required: true
 env:
   QASE_REPORT: true
   QASE_PROJECT_CODE: IWT
-  QASE_RUN_COMPLETE: true
   QASE_API_TOKEN: ${{ secrets.QASE_API_TOKEN }}
 
 jobs:
