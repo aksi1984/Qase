@@ -19,8 +19,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven ${{vars.QASE_API_TOKEN}}
-      run: mvn clean test -DQASE_ENABLE=true -DQASE_PROJECT_CODE="IWT" -DQASE_RUN_NAME="Name" -DQASE_RUN_DESCRIPTION="Desc" -DQASE_API_TOKEN=${{vars.QASE_API_TOKEN}}
+    - name: Build with Maven "${{vars.QASE_API_TOKEN}}"
+      run: mvn clean test -DQASE_ENABLE=true -DQASE_PROJECT_CODE="IWT" -DQASE_RUN_NAME="Name" -DQASE_RUN_DESCRIPTION="Desc" -DQASE_API_TOKEN="${{vars.QASE_API_TOKEN}}"
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
